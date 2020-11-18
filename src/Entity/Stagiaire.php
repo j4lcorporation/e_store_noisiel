@@ -28,7 +28,7 @@ class Stagiaire
      * @ORM\ManyToOne(targetEntity=Adresse::class, inversedBy="stagiaires")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $relation;
+    private $adresse;
 
     /**
      * @ORM\ManyToMany(targetEntity=Sondage::class, inversedBy="stagiaires")

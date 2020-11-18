@@ -5,5 +5,8 @@
 {% endblock %}
 
 {% block body %}
-    <h1>{{ titre_section }}</h1>
+<h1>{{ titre_section }}</h1>
+{% for stagiaire in stagiaires %}
+<h3>{{ stagiaire.id }} - {{ stagiaire.prenom }}</h3>
+{% endfor %}
 {% endblock %}

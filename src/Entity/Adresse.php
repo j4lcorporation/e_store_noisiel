@@ -20,7 +20,7 @@ class Adresse
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity=Stagiaire::class, mappedBy="relation", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity=Stagiaire::class, mappedBy="adresse")
      */
     private $stagiaires;
 
