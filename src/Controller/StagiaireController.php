@@ -29,6 +29,7 @@ class StagiaireController extends AbstractController
     {
         $titrePage = $this->service->capitalize("Accueil");
         $titreSection = $this->service->mettre_en_majuscule("liste des stagaires");
+
         return $this->render(
             'stagiaire/liste.html.twig',
             [
